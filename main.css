@@ -1,0 +1,489 @@
+.menu {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    z-index: 99;
+    top: 150px;
+    right: -30px;
+}
+
+.menu:hover {
+    right: -1px;
+    height: 300px;
+}
+
+.cir {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    z-index: 98;
+}
+
+.cir1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    /* background-color: tomato; */
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 97;
+}
+
+.btn1-text {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    user-select: none;
+    color: rgb(82, 82, 82);
+    left: 50%;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -25px;
+    z-index: 1;
+}
+
+.btn2-text {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    user-select: none;
+    color: rgb(82, 82, 82);
+    left: 50%;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -25px;
+    z-index: 1;
+}
+
+.btn3-text {
+    position: relative;
+    width: 50px;
+    height: 22px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    user-select: none;
+    color: rgb(82, 82, 82);
+    left: 50%;
+    top: 50%;
+    margin-top: -11px;
+    margin-left: -25px;
+    z-index: 1;
+}
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif, 微軟正黑體;
+    z-index: 99;
+    background-color: rgb(243, 235, 229);
+    padding-top: 10px;
+    user-select: none;
+    color: rgb(163, 54, 35);
+}
+
+.page1 {
+    position: relative;
+    width: 1010px;
+    height: 900px;
+    left: 50%;
+    margin-left: -475px;
+    top: 100px;
+}
+
+.chunk1 {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background-image: url('image/豆乳雞.jpg');
+    left: 50px;
+    top: -500px;
+    opacity: 0;
+    animation: chunk1 0.7s ease forwards;
+    -webkit-animation: chunk1 0.7s ease forwards;
+}
+
+@keyframes chunk1 {
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+.chunk1:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chunk2 {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background-image: url('image/臭豆腐.jpg');
+    left: 290px;
+    top: -460px;
+    opacity: 0;
+    animation: chunk2 0.7s ease 0.2s forwards;
+    -webkit-animation: chunk2 0.7s ease 0.2s forwards;
+}
+
+@keyframes chunk2 {
+    to {
+        top: 60px;
+        opacity: 1;
+    }
+}
+
+.chunk2:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chunk3 {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background-image: url('image/豆花.jpg');
+    left: 530px;
+    top: -500px;
+    opacity: 0;
+    animation: chunk3 0.7s ease 0.4s forwards;
+    -webkit-animation: chunk3 0.7s ease 0.4s forwards;
+}
+
+@keyframes chunk3 {
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+.chunk3:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.chunk4 {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background-image: url('image/豆干2.jpg');
+    left: 770px;
+    top: -460px;
+    opacity: 0;
+    animation: chunk4 0.7s ease 0.6s forwards;
+    -webkit-animation: chunk4 0.7s ease 0.6s forwards;
+}
+
+@keyframes chunk4 {
+    to {
+        top: 60px;
+        opacity: 1;
+    }
+}
+
+.chunk4:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.page2 {
+    position: relative;
+    width: 1210px;
+    height: 900px;
+    left: 50%;
+    margin-left: -605px;
+    top: 20px;
+    /* background-color: black; */
+}
+
+.page3 {
+    position: relative;
+    width: 1210px;
+    height: 900px;
+    left: 50%;
+    margin-left: -605px;
+    top: 40px;
+    /* background-color: white; */
+}
+
+.page4 {
+    position: relative;
+    width: 1210px;
+    height: 900px;
+    left: 50%;
+    margin-left: -605px;
+    top: 60px;
+    /* background-color: black; */
+}
+
+.page5 {
+    position: relative;
+    width: 1210px;
+    height: 900px;
+    left: 50%;
+    margin-left: -605px;
+    top: 80px;
+    /* background-color: white; */
+}
+
+.useless {
+    position: relative;
+    width: 1210px;
+    height: 100px;
+    left: 50%;
+    margin-left: -605px;
+}
+
+.text {
+    position: absolute;
+    width: 400px;
+    height: 560px;
+    top: 200px;
+    right: 65px;
+    background-color: wheat;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.biao {
+    position: absolute;
+    width: 1075px;
+    height: 100px;
+    top: 70px;
+    left: 65px;
+    /* background-color: aquamarine; */
+}
+
+.ques {
+    position: fixed;
+    width: 500px;
+    height: 700px;
+    left: 50%;
+    margin-top: 0px;
+    top: -760px;
+    margin-left: -280px;
+    background-color: #79350c;
+    border-radius: 10px;
+    padding: 30px;
+    user-select: none;
+    font-size: 24px;
+    font-family: 微軟正黑體;
+    line-height: 52px;
+    color: blanchedalmond;
+}
+
+.questcomp {
+    position: fixed;
+    width: 300px;
+    height: 70px;
+    left: 50%;
+    margin-left: -180px;
+    top: 50%;
+    margin-top: -80px;
+    background-color: beige;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkkhaki;
+    /* opacity: 0; */
+    display: none;
+    user-select: none;
+}
+
+.compclose {
+    position: relative;
+    width: 150px;
+    height: 20px;
+    left: 50%;
+    margin-left: -75px;
+    font-family: 微軟正黑體;
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.c1-ani {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    opacity: 0;
+}
+
+.c2-ani {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    opacity: 0;
+}
+
+.c3-ani {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    opacity: 0;
+}
+
+.c4-ani {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    opacity: 0;
+}
+
+.btnimg {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 2;
+}
+
+.c1-tex {
+    background-image: url(image/8.png);
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+}
+
+.c2-tex {
+    background-image: url(image/6.png);
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+}
+
+.c3-tex {
+    background-image: url(image/7.png);
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+}
+
+.c4-tex {
+    background-image: url(image/5.png);
+    height: 300px;
+    width: 120px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+}
+
+/* 輪播圖 */
+.photo1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 65px;
+    /* background-color: teal; */
+}
+
+.photo2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 65px;
+    /* background-color: teal; */
+    overflow: hidden;
+}
+
+.photo3 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 65px;
+    /* background-color: teal; */
+    overflow: hidden;
+}
+
+.photo4 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 200px;
+    left: 65px;
+    /* background-color: teal; */
+    overflow: hidden;
+}
+
+.text h4 {
+    font-family: 微軟正黑體;
+    font-weight: bolder;
+    color: darkgoldenrod;
+    line-height: 50px;
+}
+
+.text h4::first-letter {
+    font-size: 150%;
+}
+
+.text p {
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif, 微軟正黑體;
+    font-weight: 600;
+}

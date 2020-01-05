@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旱溪豆志</title>
+    <link type="text/css" href="main.css" rel="stylesheet">
+    <link type="text/css" href="carousel.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+            background-color: rgb(243, 235, 229);
+        }
+
+        body::-webkit-scrollbar {
+            width: 0 !important
+        }
+    </style>
+    
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.ajax({
+        method: "GET",
+        url: "data.json",
+        dataType: "json",
+        //https://randomuser.me/api/
+    })
+    .done(function( msg ) {
+        console.log(msg);
+
+        var shopid1 = msg.results[0].id;
+        var shopnum1 = msg.results[0].number;
+        var shoptime1 = msg.results[0].time;
+        var shop1 = msg.results[0].introd;
+        $('#one1').append(shopid1); 
+        $('#one2').append(shopnum1);
+        $('#one3').append(shoptime1);
+        $('#one4').append(shop1); 
+
+
+        var shopid2 = msg.results[1].id;
+        var shopnum2 = msg.results[1].number;
+        var shoptime2 = msg.results[1].time;
+        var shop2 = msg.results[1].introd;
+        $('#two1').append(shopid2); 
+        $('#two2').append(shopnum2);
+        $('#two3').append(shoptime2);
+        $('#two4').append(shop2); 
+
+        var shopid3 = msg.results[2].id;
+        var shopnum3 = msg.results[2].number;
+        var shoptime3 = msg.results[2].time;
+        var shop3 = msg.results[2].introd;
+        $('#three1').append(shopid3); 
+        $('#three2').append(shopnum3);
+        $('#three3').append(shoptime3);
+        $('#three4').append(shop3); 
+
+        var shopid4 = msg.results[3].id;
+        var shopnum4 = msg.results[3].number;
+        var shoptime4 = msg.results[3].time;
+        var shop4 = msg.results[3].introd;
+        $('#four1').append(shopid4); 
+        $('#four2').append(shopnum4);
+        $('#four3').append(shoptime4);
+        $('#four4').append(shop4); 
+
+        /*$.each(msg,function(i,n){
+            alert("店名："+n.id + "  電話:"+n.number);
+
+        });*/
+        
+     });
+ });
+
+
+</script>
+
+<body>
+    <!-- 右邊選單 -->
+    <div class="menu" id="menu">
+        <div class="cir"></div>
+        <div class="cir1" id="btn1">
+            <img src="image/回頂端.png" class="btnimg">
+            <div class="btn1-text">回頂端</div>
+        </div>
+        <div class="cir1" id="btn2">
+            <img src="image/填問卷.png" class="btnimg">
+            <div class="btn2-text">填問卷</div>
+        </div>
+        <div class="cir1" id="btn3">
+            <img src="image/回主頁.png" class="btnimg">
+            <div class="btn3-text">回主頁</div>
+        </div>
+    </div>
+    <!-- 首頁 有四個選項 -->
+    <div class="page1">
+        <div class="chunk1" id="toone">
+            <div class="c1-ani"></div>
+            <div class="c1-tex"></div>
+        </div>
+        <div class="chunk2" id="totwo">
+            <div class="c2-ani"></div>
+            <div class="c2-tex"></div>
+        </div>
+        <div class="chunk3" id="tothree">
+            <div class="c3-ani"></div>
+            <div class="c3-tex"></div>
+        </div>
+        <div class="chunk4" id="tofour">
+            <div class="c4-ani"></div>
+            <div class="c4-tex"></div>
+        </div>
+    </div>
+    <!-- 第二頁 -->
+    <div class="page2" id="one">
+        <div class="biao">
+            <img src="image/4.png" style="height: 100px; position: absolute;left: 30px; top: 0;">
+        </div>
+        <div class="carousel1">
+            <div class="imgbox1">
+                <img src="image/一也豆乳雞地圖.png">
+                <img src="photo/豆乳雞1.jpg">
+                <img src="photo/豆乳雞2.jpg">
+                <img src="photo/豆乳雞3.jpg">
+                <img src="photo/豆乳雞4.jpg">
+                <img src="photo/豆乳雞5.jpg">
+            </div>
+            <div class="btnl1">&lt;</div>
+            <div class="btnr1">&gt;</div>
+            <ul class="dot1"></ul>
+        </div>
+        <div class="text" >
+            <h4>店家名稱</h4>
+            <p id=one1></p>
+            <h4>電話</h4>
+            <p id=one2></p>
+            <h4>營業時間</h4>
+            <p id=one3></p>
+            <h4>簡介</h4>
+            <p id=one4></p>
+        </div>
+    </div>
+    <!-- 第三頁 -->
+    <div class="page3" id="two">
+        <div class="biao">
+            <img src="image/1.png" style="height: 100px; position: absolute;left: 30px; top: 0;">
+        </div>
+        <div class="carousel2">
+            <div class="imgbox2">
+                <img src="image/臭味相投臭豆腐地圖.png">
+                <img src="photo/臭豆腐1.jpg">
+                <img src="photo/臭豆腐2.jpg">
+                <img src="photo/臭豆腐3.jpg">
+                <img src="photo/臭豆腐4.png">
+                <img src="photo/臭豆腐5.png">
+            </div>
+            <div class="btnl2">&lt;</div>
+            <div class="btnr2">&gt;</div>
+            <ul class="dot2"></ul>
+        </div>
+        <div class="text">
+            <h4>店家名稱</h4>
+            <p id=two1></p>
+            <h4>電話</h4>
+            <p id=two2></p>
+            <h4>營業時間</h4>
+            <p id=two3></p>
+            <h4>簡介</h4>
+            <p id=two4></p>
+        </div>
+    </div>
+    <!-- 第四頁 -->
+    <div class="page4" id="three">
+        <div class="biao">
+            <img src="image/2.png" style="height: 100px; position: absolute;left: 30px; top: 0;">
+        </div>
+        <div class="carousel3">
+            <div class="imgbox3">
+                <img src="image/微豆豆花地圖.png">
+                <img src="photo/豆花1.jpg">
+                <img src="photo/豆花2.jpg">
+                <img src="photo/豆花3.jpg">
+                <img src="photo/豆花4.png">
+                <img src="photo/豆花5.png">
+            </div>
+            <div class="btnl3">&lt;</div>
+            <div class="btnr3">&gt;</div>
+            <ul class="dot3"></ul>
+        </div>
+        <div class="text">
+            <h4>店家名稱</h4>
+            <p id=three1></p>
+            <h4>電話</h4>
+            <p id=three2></p>
+            <h4>營業時間</h4>
+            <p id=three3></p>
+            <h4>簡介</h4>
+            <p id=three4></p>
+        </div>
+    </div>
+    <!-- 第五頁 -->
+    <div class="page5" id="four">
+        <div class="biao">
+            <img src="image/3.png" style="height: 100px; position: absolute;left: 30px; top: 0;">
+        </div>
+        <div class="carousel4">
+            <div class="imgbox4">
+                <img src="image/方臉師傅豆干地圖.png">
+                <img src="photo/豆干1.jpg">
+                <img src="photo/豆干2.jpg">
+                <img src="photo/豆干3.jpg">
+                <img src="photo/豆干4.png">
+                <img src="photo/豆干5.png">
+            </div>
+            <div class="btnl4">&lt;</div>
+            <div class="btnr4">&gt;</div>
+            <ul class="dot4"></ul>
+        </div>
+        <div class="text">
+            <h4>店家名稱</h4>
+            <p id=four1></p>
+            <h4>電話</h4>
+            <p id=four2></p>
+            <h4>營業時間</h4>
+            <p id=four3></p>
+            <h4>簡介</h4>
+            <p id=four4></p>
+        </div>
+    </div>
+    <!-- 讓第五頁好看一點的區塊 -->
+    <div class="useless"></div>
+    <!-- 問卷 -->
+    <div class="ques">
+        <form method="POST">
+            <table style="width: 480px">
+                <tr>
+                    <td>有去過旱溪夜市嗎？</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q1" value="yse">有
+                        <input type="radio" name="q1" value="no">沒有
+                    </td>
+                </tr>
+                <tr>
+                    <td>這四種豆字食物最喜歡哪一種呢？</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="q2" value="1">豆乳雞
+                        <input type="radio" name="q2" value="2">臭豆腐
+                        <input type="radio" name="q2" value="3">豆花
+                        <input type="radio" name="q2" value="4">豆干
+                    </td>
+                </tr>
+                <tr>
+                    <td>其他：</td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="q4" placeholder="對我們的建議！" style="width: 490px;height: 200px"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" name="submit" style="font-family: 微軟正黑體;font-size: 16px"
+                            id="submit">送出</button>
+                        <button type="button" name="reset" style="font-family: 微軟正黑體;font-size: 16px">重填</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="questcomp">
+        Thank You！
+        <div class="compclose">再點一下關閉視窗</div>
+    </div>
+    <!-- 頁腳 -->
+    <div class="foot">Copyright &copy 2019 蜂鳴器就是豐明器 版權所有</div>
+    <!-- jQuery -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="carousel.js"></script>
+</body>
+
+</html>
