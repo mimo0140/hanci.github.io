@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旱溪豆志</title>
+    <link type="text/css" href="ani-css.css" rel="stylesheet">
+    <link type="text/css" href="mainpage-css.css" rel="stylesheet">
+    <script language="javascript">
+        function webre() {
+            window.location.reload();
+        }
+
+        function infood() {
+            window.location.href = 'food_main.html';
+        }
+    </script>
+    <style>
+        body {
+            background-color: rgb(243, 235, 229);
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 動畫 -->
+    <div>
+        <div class="animation">
+            <div class="look-back">
+                <div class="look"></div>
+            </div>
+            <div class="people-face">
+                <div class="people-eye-left">
+                    <div class="eyeball-left"></div>
+                </div>
+                <div class="people-eye-right">
+                    <div class="eyeball-right"></div>
+                </div>
+                <div class="people-lip"></div>
+            </div>
+            <div><img src="ani-image/口水.png" class="water"></div>
+            <div><img src="ani-image/問號.png" class="ques"></div>
+            <div><img src="ani-image/嚇.png" class="shark"></div>
+            <div class="people-body"></div>
+            <div class="people-hand-left"></div>
+            <div class="people-hand-right"></div>
+            <div class="telescope">
+                <div class="telescope-glass-left"></div>
+                <div class="telescope-glass-right"></div>
+            </div>
+            <div class="zese1">
+                <div><img src="ani-image/遮色片.png" class="zese2"></div>
+                <div><img src="ani-image/臭豆腐.png" class="tofu"></div>
+                <div><img src="ani-image/豆花.png" class="tohu"></div>
+                <div><img src="ani-image/雞丁.png" class="gidin"></div>
+                <div><img src="ani-image/豆干.png" class="togan"></div>
+                <div><img src="ani-image/豆志標題帶副標.png" class="biao"></div>
+            </div>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="btn-block">
+            <div class="btnin" onclick="infood()">Enter</div>
+            <div class="btnre" onclick="webre()">Replay</div>
+        </div>
+    </div>
+    <!-- 動畫結束 -->
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+</body>
+
+</html>
