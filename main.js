@@ -44,8 +44,8 @@
     });
     quest.click(function () {
         $('.ques').animate({
-            top: '50%',
-            marginTop: '-380px',
+            top: '40px',
+            // marginTop: '0px',
         });
     });
     quest.hover(function () {
