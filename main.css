@@ -341,7 +341,11 @@
     font-size: 12px;
     letter-spacing: 5px;
 }
-
+#submit{
+    line-height: 30px;
+    width: 50px;
+    text-align: center;
+}
 .c1-ani {
     position: relative;
     top: 0;

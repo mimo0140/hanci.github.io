@@ -42,11 +42,23 @@
             left: '+=60',
         });
     });
+    // var C = false;
+
+    // $(document).mousedown(function (event) {
+    //     if (!('.ques').is(event.target) && ('.ques').has(event.target).length === 0 && C) {
+    //         $('.ques').animate({
+    //             marginTop: '0px',
+    //             top: '-760px'
+    //         });
+    //         C = false;
+    //     }
+    // });
     quest.click(function () {
         $('.ques').animate({
             top: '40px',
             // marginTop: '0px',
         });
+        // C = true;
     });
     quest.hover(function () {
         $('.btn2-text').animate({
